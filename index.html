@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Area 51 Automotive | Mechanic, Dargaville</title>
+<meta name="description" content="Servicing and repairs for cars, utes and tractors in Dargaville, plus bullbars, winches, auto electrical and 4WD accessories. 16 Normanby Street, 09 439 5150.">
+<meta property="og:title" content="Area 51 Automotive | Mechanic, Dargaville">
+<meta property="og:description" content="Servicing and repairs for cars, utes and tractors in Dargaville. Bullbars, winches, auto electrical and 4WD accessories.">
+<meta property="og:image" content="img/og.jpg">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@600;700;800&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+/* ========== EDIT THESE TO RE-THEME THE WHOLE SITE ========== */
+:root{
+  --accent:#8ade84;        /* the green from the Area 51 sign */
+  --accent-dark:#6cc566;
+  --char:#16181a;          /* darkest anchor */
+  --char-2:#1f2225;        /* dark band */
+  --char-3:#2a2e32;        /* raised dark surface */
+  --steel:#e9e7e3;         /* light band */
+  --ink:#16181a;
+  --muted:#9ba1a6;
+  --muted-dark:#5d6368;
+  --line:rgba(255,255,255,.1);
+  --display:'Saira Condensed', 'Arial Narrow', sans-serif;
+  --body:'Work Sans', Arial, sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--body);font-size:17px;line-height:1.6;color:#e6e6e4;background:var(--char);overflow-x:hidden}
+img{max-width:100%;height:auto;display:block;image-orientation:from-image}
+a{color:var(--accent)}
+h1,h2,h3{font-family:var(--display);text-transform:uppercase;line-height:.95;margin:0 0 .45em;font-weight:800;letter-spacing:.01em}
+h2{font-size:clamp(2.4rem,6vw,4.6rem)}
+h3{font-size:1.7rem;font-weight:700}
+p{margin:0 0 1em}
+.wrap{max-width:1280px;margin:0 auto;padding:0 20px}
+section{padding:100px 0;position:relative}
+.band-dark{background:var(--char-2)}
+.band-light{background:var(--steel);color:var(--ink)}
+.band-light .muted{color:var(--muted-dark)}
+.muted{color:var(--muted)}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:var(--display);font-size:1rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:16px}
+.eyebrow::before{content:"";width:28px;height:3px;background:var(--accent)}
+.section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-bottom:48px}
+.section-head h2{margin:0;max-width:760px}
+.section-head p{max-width:380px;margin:0}
+.badge{display:inline-block;font-family:var(--body);font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:5px 10px;background:var(--accent);color:#111;vertical-align:middle;margin-left:10px;line-height:1.2}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:14px 26px;font-family:var(--display);font-size:1.15rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border:2px solid transparent;transition:background .2s,color .2s,border-color .2s,transform .2s;cursor:pointer}
+.btn-primary{background:var(--accent);color:#111}
+.btn-primary:hover{background:#fff;transform:translateY(-2px)}
+.btn-ghost{border-color:#fff;color:#fff}
+.btn-ghost:hover{background:#fff;color:#111}
+.btn-dark{border-color:var(--ink);color:var(--ink)}
+.btn-dark:hover{background:var(--ink);color:#fff}
+.btn svg{width:20px;height:20px;flex:none}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.icon{width:26px;height:26px;flex:none}
+
+/* ---------- NAV (shrinks on scroll) ---------- */
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;color:#fff;transition:background .3s,box-shadow .3s}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:88px;transition:height .3s}
+.nav.scrolled{background:rgba(22,24,26,.96);box-shadow:0 1px 0 var(--line)}
+.nav.scrolled .wrap{height:64px}
+.logo{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-family:var(--display);font-weight:800;font-size:1.6rem;text-transform:uppercase;letter-spacing:.04em;white-space:nowrap}
+.logo svg{width:34px;height:34px}
+.nav-links{display:flex;gap:30px;list-style:none;margin:0;padding:0}
+.nav-links a{color:#fff;text-decoration:none;font-family:var(--display);font-weight:600;font-size:1.1rem;letter-spacing:.1em;text-transform:uppercase;position:relative;padding:4px 0}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--accent);transition:width .25s}
+.nav-links a:hover::after{width:100%}
+.nav-right{display:flex;align-items:center;gap:10px}
+.nav-call{min-height:46px;padding:8px 18px;font-size:1.05rem}
+.burger{display:none;background:none;border:0;color:#fff;width:46px;height:46px;padding:10px;cursor:pointer}
+@media (max-width:960px){
+  .burger{display:block}
+  .nav-links{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:var(--char);padding:8px 20px 24px;border-top:3px solid var(--accent)}
+  .nav-links.open{display:flex}
+  .nav-links a{display:block;padding:14px 0;border-bottom:1px solid var(--line)}
+  .nav-call .label{display:none}
+}
+@media (max-width:420px){.logo{font-size:1.3rem}.logo svg{width:28px;height:28px}}
+
+/* ---------- HERO (Ken Burns crossfade) ---------- */
+.hero{min-height:100vh;min-height:100svh;display:flex;align-items:flex-end;color:#fff;background:var(--char);overflow:hidden;padding:140px 0 70px}
+.hero-slides{position:absolute;inset:0}
+.hero-slides img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.02);transition:opacity 1.6s ease;filter:saturate(.75) contrast(1.1)}
+.hero-slides img.active{opacity:1;animation:kenburns 8s ease-out forwards}
+@keyframes kenburns{from{transform:scale(1.02) translate(0,0)}to{transform:scale(1.14) translate(-1.5%,-1%)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(22,24,26,.85) 0%,rgba(22,24,26,.5) 55%,rgba(22,24,26,.3)),linear-gradient(0deg,rgba(22,24,26,.9),transparent 45%)}
+.hero .wrap{position:relative;z-index:2;width:100%}
+.hero h1{font-size:clamp(2.6rem,7.2vw,6.4rem);margin-bottom:22px}
+.hero h1 .line{display:block;overflow:hidden;padding-bottom:.04em}
+.hero h1 .line span{display:block}
+.hero h1 .hl{color:var(--accent)}
+.js .hero h1 .line span{transform:translateY(105%);animation:lineUp .9s cubic-bezier(.2,.8,.2,1) forwards}
+.js .hero h1 .line:nth-child(2) span{animation-delay:.15s}
+.js .hero h1 .line:nth-child(3) span{animation-delay:.3s}
+@keyframes lineUp{to{transform:translateY(0)}}
+.hero-bottom{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap}
+.hero p.lead{font-size:clamp(1.05rem,2vw,1.3rem);color:#dcdcd8;max-width:540px;margin:0}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0 0}
+.js .hero-fade{opacity:0;animation:fadeIn .8s ease .6s forwards}
+@keyframes fadeIn{to{opacity:1}}
+.rating{display:inline-flex;align-items:center;gap:14px;padding:14px 20px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.rating .num{font-family:var(--display);font-size:2.4rem;font-weight:800;line-height:1}
+.stars{color:var(--accent);letter-spacing:2px}
+.rating small{display:block;color:#cfcfcb;font-size:.85rem}
+.slide-dots{display:flex;gap:8px;margin-top:30px}
+.slide-dots span{width:40px;height:3px;background:rgba(255,255,255,.3);position:relative;overflow:hidden}
+.slide-dots span.on::after{content:"";position:absolute;inset:0;background:var(--accent);animation:dot 6s linear forwards;transform-origin:left}
+@keyframes dot{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+
+/* ---------- TRUST STRIP ---------- */
+.trust{padding:0;background:var(--accent);color:#111}
+.trust-grid{display:grid;grid-template-columns:repeat(3,1fr)}
+.trust-item{display:flex;gap:14px;align-items:center;padding:26px 24px}
+.trust-item+.trust-item{border-left:2px solid rgba(0,0,0,.15)}
+.trust-item strong{display:block;font-family:var(--display);font-size:1.45rem;text-transform:uppercase;letter-spacing:.03em;line-height:1.1}
+.trust-item span{font-size:.95rem;font-weight:500}
+@media (max-width:800px){.trust-grid{grid-template-columns:1fr}.trust-item+.trust-item{border-left:0;border-top:2px solid rgba(0,0,0,.15)}}
+
+/* ---------- SERVICES (photo tiles) ---------- */
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:340px;gap:6px}
+.tile{position:relative;overflow:hidden;color:#fff;text-decoration:none;display:flex;align-items:flex-end;background:var(--char-3)}
+.tile.wide{grid-column:span 2}
+.tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.75) contrast(1.1);transition:transform .8s cubic-bezier(.2,.8,.2,1)}
+.tile::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(22,24,26,.92) 0%,rgba(22,24,26,.35) 55%,rgba(22,24,26,.15));transition:background .4s}
+.tile:hover img{transform:scale(1.08)}
+.tile-body{position:relative;z-index:2;padding:28px}
+.tile .num{font-family:var(--display);font-weight:700;color:var(--accent);letter-spacing:.15em;font-size:1rem;text-shadow:0 1px 8px rgba(0,0,0,.85)}
+.tile h3{font-size:2.1rem;margin:4px 0 6px}
+.tile p{margin:0;color:#d4d4d0;max-width:420px;font-size:.98rem}
+@media (max-width:900px){.tiles{grid-template-columns:1fr 1fr;grid-auto-rows:300px}.tile.wide{grid-column:span 2}}
+@media (max-width:600px){.tiles{grid-template-columns:1fr;grid-auto-rows:280px}.tile.wide{grid-column:auto}}
+
+/* ---------- ABOUT ---------- */
+.about-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:64px;align-items:center}
+.about-img{position:relative}
+.about-img img{width:100%;aspect-ratio:4/5;object-fit:cover;filter:saturate(.75) contrast(1.1)}
+.corner-tag{position:absolute;left:-1px;bottom:-1px;background:var(--accent);color:#111;padding:18px 22px;font-family:var(--display);font-weight:800;font-size:1.3rem;text-transform:uppercase;letter-spacing:.06em;line-height:1.1}
+.checklist{list-style:none;padding:0;margin:26px 0 0}
+.checklist li{display:flex;gap:14px;align-items:center;padding:14px 0;border-bottom:1px solid rgba(0,0,0,.12);font-weight:600;font-size:1.05rem}
+.checklist .icon{color:#fff;background:var(--accent);padding:4px;width:28px;height:28px}
+@media (max-width:860px){.about-grid{grid-template-columns:1fr;gap:40px}.about-img img{aspect-ratio:4/3}}
+
+/* ---------- PARALLAX BAND ---------- */
+.parallax{padding:0;height:560px;overflow:hidden;display:flex;align-items:center;color:#fff}
+.parallax .bg{position:absolute;left:0;right:0;top:-20%;height:140%;background:url('img/hero-workshop-1920.webp') center/cover no-repeat;filter:saturate(.7) contrast(1.1);will-change:transform}
+.parallax::after{content:"";position:absolute;inset:0;background:rgba(22,24,26,.62)}
+.parallax .wrap{position:relative;z-index:2;width:100%}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+.stat .n{font-family:var(--display);font-weight:800;font-size:clamp(3.6rem,9vw,7rem);line-height:.9;color:#fff}
+.stat .n em{font-style:normal;color:var(--accent)}
+.stat p{font-family:var(--display);text-transform:uppercase;letter-spacing:.12em;font-size:1.1rem;color:#ddd;margin:8px 0 0}
+.parallax .note{margin-top:34px;font-size:.85rem;color:#bbb}
+@media (max-width:700px){.parallax{height:auto;padding:90px 0}.stats{grid-template-columns:1fr;gap:34px}}
+
+/* ---------- GALLERY (masonry, natural ratios) ---------- */
+.masonry{column-count:3;column-gap:8px}
+.masonry figure{margin:0 0 8px;break-inside:avoid;position:relative;overflow:hidden;background:var(--char-3)}
+.masonry img{width:100%;height:auto;display:block;filter:saturate(.75) contrast(1.1);transition:transform .7s ease}
+.masonry figure:hover img{transform:scale(1.05)}
+.masonry figcaption{position:absolute;left:0;bottom:0;padding:10px 14px;background:rgba(22,24,26,.85);font-family:var(--display);text-transform:uppercase;letter-spacing:.1em;font-size:.95rem;color:#fff}
+@media (max-width:900px){.masonry{column-count:2}}
+@media (max-width:520px){.masonry{column-count:1}}
+
+/* ---------- TEAM ---------- */
+.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.team-card{background:#fff;padding:36px 28px;border-top:4px solid var(--accent)}
+.avatar{width:84px;height:84px;background:var(--char);color:#fff;display:grid;place-items:center;font-family:var(--display);font-size:2rem;font-weight:800;margin-bottom:20px;box-shadow:6px 6px 0 var(--accent)}
+.team-card h3{color:var(--ink)}
+.team-card p{margin:0;color:var(--muted-dark)}
+@media (max-width:800px){.team-grid{grid-template-columns:1fr}}
+
+/* ---------- REVIEWS ---------- */
+.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.review{background:var(--char-3);padding:34px 30px;display:flex;flex-direction:column;gap:14px;position:relative}
+.review::before{content:"\201C";position:absolute;right:24px;top:0;font-family:var(--display);font-size:7rem;line-height:1;color:var(--accent);opacity:.25}
+.review p{margin:0;flex:1;font-size:1.05rem}
+.review footer{font-size:.92rem;color:var(--muted)}
+.review footer strong{color:#fff;display:block;font-family:var(--display);text-transform:uppercase;letter-spacing:.08em;font-size:1.1rem}
+.center{margin-top:36px}
+@media (max-width:900px){.reviews-grid{grid-template-columns:1fr}}
+
+/* ---------- LEAVE A REVIEW ---------- */
+.review-banner{background:var(--accent);color:#111;padding:60px 0}
+.review-banner .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.review-banner h2{margin:0;font-size:clamp(2rem,5vw,3.4rem)}
+.review-banner p{margin:6px 0 0;font-weight:500}
+.review-banner .btn{background:#111;color:#fff}
+.review-banner .btn:hover{background:#fff;color:#111}
+
+/* ---------- FAQ ---------- */
+.faq-grid{display:grid;grid-template-columns:1fr 1.6fr;gap:60px}
+.faq-list details{border-bottom:1px solid rgba(0,0,0,.15)}
+.faq-list details:first-child{border-top:1px solid rgba(0,0,0,.15)}
+.faq-list summary{list-style:none;cursor:pointer;padding:22px 50px 22px 0;font-family:var(--display);font-size:1.45rem;font-weight:700;text-transform:uppercase;letter-spacing:.02em;position:relative;min-height:44px}
+.faq-list summary::-webkit-details-marker{display:none}
+.faq-list summary::after{content:"";position:absolute;right:6px;top:50%;width:16px;height:16px;border-right:3px solid var(--accent);border-bottom:3px solid var(--accent);transform:translateY(-70%) rotate(45deg);transition:transform .3s}
+.faq-list details[open] summary::after{transform:translateY(-30%) rotate(225deg)}
+.faq-list details p{padding:0 0 22px;margin:0;color:var(--muted-dark)}
+@media (max-width:860px){.faq-grid{grid-template-columns:1fr;gap:20px}}
+
+/* ---------- CONTACT ---------- */
+.contact{background:var(--char)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.contact-rows{list-style:none;padding:0;margin:28px 0}
+.contact-rows li{display:flex;gap:16px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line);font-size:1.05rem}
+.contact-rows .icon{color:var(--accent)}
+.contact-rows a{color:#fff;text-decoration:none}
+.contact-actions{display:flex;flex-direction:column;gap:10px}
+.contact-actions .btn{min-height:96px;font-size:1.6rem;justify-content:space-between;padding:20px 30px}
+.contact-actions .btn svg{width:30px;height:30px}
+.socials{display:flex;gap:8px}
+.socials a{width:46px;height:46px;display:grid;place-items:center;background:var(--char-3);color:#fff;transition:background .2s,color .2s}
+.socials a:hover{background:var(--accent);color:#111}
+.socials svg{width:20px;height:20px}
+@media (max-width:860px){.contact-grid{grid-template-columns:1fr;gap:40px}.contact-actions .btn{min-height:80px;font-size:1.3rem}}
+
+/* ---------- MAP ---------- */
+.map{padding:0;background:var(--char)}
+.map iframe{width:100%;height:440px;border:0;display:block;filter:grayscale(.6) contrast(1.05)}
+
+/* ---------- FOOTER ---------- */
+.footer{background:#0e0f10;color:#8b9095;padding:40px 0;font-size:.95rem;border-top:3px solid var(--accent)}
+.footer .wrap{display:flex;flex-wrap:wrap;gap:22px;justify-content:space-between;align-items:center}
+.footer a{color:#cfd2d4;text-decoration:none}
+.footer a:hover{color:var(--accent)}
+.footer-links{display:flex;flex-wrap:wrap;gap:20px}
+
+/* ---------- SCROLL REVEALS (only when JS runs) ---------- */
+.js .reveal{opacity:0;transform:translateY(34px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.8,.2,1)}
+.js .reveal.in{opacity:1;transform:none}
+/* clip sits on the child image; the unclipped parent is what gets observed */
+.js .wipe>img{clip-path:inset(0 100% 0 0);transition:clip-path 1.1s cubic-bezier(.77,0,.18,1),transform .8s cubic-bezier(.2,.8,.2,1)}
+.js .wipe-up>img{clip-path:inset(100% 0 0 0);transition:clip-path 1s cubic-bezier(.77,0,.18,1),transform .7s ease}
+.js .wipe.in>img,.js .wipe-up.in>img{clip-path:inset(0 0 0 0)}
+
+@media (max-width:600px){section{padding:70px 0}.map iframe{height:320px}.section-head{margin-bottom:34px}}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js .reveal{opacity:1;transform:none}
+  .js .wipe>img,.js .wipe-up>img{clip-path:none}
+  .js .hero h1 .line span{transform:none}
+  .js .hero-fade{opacity:1}
+  .hero-slides img.active{transform:none}
+  .parallax .bg{transform:none!important}
+}
+
+/* ---------- Area 51 additions ---------- */
+.logo .mark{display:grid;place-items:center;width:44px;height:44px;background:#0c0d0e;border:2px solid var(--accent);color:var(--accent);font-family:var(--display);font-weight:800;font-size:1.35rem;letter-spacing:0;line-height:1}
+.logo .word{display:flex;flex-direction:column;line-height:.9}
+.logo .word b{color:var(--accent);font-size:1.7rem;letter-spacing:.04em}
+.logo .word small{font-family:var(--body);font-size:.62rem;font-weight:600;letter-spacing:.34em;color:#e9e9e6}
+@media (max-width:420px){.logo .word b{font-size:1.35rem}.logo .mark{width:38px;height:38px;font-size:1.15rem}}
+.slide-ctrl{display:flex;align-items:center;gap:14px;margin-top:30px}
+.slide-ctrl .slide-dots{margin-top:0}
+.pause{width:40px;height:40px;display:grid;place-items:center;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.3);color:#fff;cursor:pointer}
+.pause svg{width:16px;height:16px}
+.pause:hover{background:var(--accent);color:#111;border-color:var(--accent)}
+.stock-note{font-size:.78rem;color:var(--muted);margin-top:14px}
+.band-light .stock-note{color:var(--muted-dark)}
+.review .snap{font-size:.8rem;color:var(--muted)}
+.hours{display:grid;grid-template-columns:auto 1fr;gap:4px 18px;font-size:.98rem}
+.hours dt{color:#fff;font-weight:600}
+.hours dd{margin:0;color:var(--muted)}
+::selection{background:var(--accent);color:#111}
+</style>
+</head>
+<body>
+
+<!-- Reusable SVG icons -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16"/><path d="m22 7-10 6L2 7"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="square"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square"><path d="M5 12h14M13 5l7 7-7 7"/></symbol>
+  <symbol id="i-excavator" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="15" width="12" height="5" rx="2.5"/><path d="M4 15v-4h6l2 4M10 11V7l6-3 5 6-2 2"/><path d="m19 12-1 3h3z"/></symbol>
+  <symbol id="i-cone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 3h5L20 20H4z"/><path d="M3 21h18M7.5 13h9M8.8 8.5h6.4"/></symbol>
+  <symbol id="i-quote" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24" fill="currentColor"><path d="M14 8.5V6.8c0-.8.2-1.3 1.4-1.3H17V2.2c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.1H7.5V12h2.8v10H14V12h2.8l.4-3.5z"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-tt" viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 2h-3.4v13.4a2.9 2.9 0 1 1-2.9-2.9c.3 0 .6 0 .9.1V9.1a6.3 6.3 0 1 0 5.4 6.3V8.6a8 8 0 0 0 4.6 1.5V6.7a4.7 4.7 0 0 1-4.6-4.7z"/></symbol>
+  <symbol id="i-wrench" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.4-.6-.6-2.4z"/></symbol>
+</svg>
+
+<!-- 1. NAV -->
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Area 51 Automotive, home">
+      <span class="mark" aria-hidden="true">51</span>
+      <span class="word"><b>AREA 51</b><small>AUTOMOTIVE</small></span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <a class="btn btn-primary nav-call" href="tel:+6494395150"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span class="label">09 439 5150</span></a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- 2. HERO -->
+<section class="hero" aria-label="Introduction">
+  <div class="hero-slides" id="heroSlides">
+    <img class="active" src="img/hero-shopfront-1920.webp" srcset="img/hero-shopfront-1080.webp 1080w, img/hero-shopfront-1920.webp 1920w, img/hero-shopfront-3840.webp 3840w" sizes="100vw" alt="The Area 51 Automotive workshop on Normanby Street, Dargaville" width="1920" height="1440" fetchpriority="high">
+    <img src="img/hero-ute-1920.webp" srcset="img/hero-ute-1080.webp 1080w, img/hero-ute-1920.webp 1920w, img/hero-ute-3840.webp 3840w" sizes="100vw" alt="" width="1920" height="1280" loading="lazy">
+    <img src="img/hero-workshop-1920.webp" srcset="img/hero-workshop-1080.webp 1080w, img/hero-workshop-1920.webp 1920w, img/hero-workshop-3840.webp 3840w" sizes="100vw" alt="" width="1920" height="1280" loading="lazy">
+  </div>
+  <div class="wrap">
+    <span class="eyebrow hero-fade">Dargaville · Northland</span>
+    <h1>
+      <span class="line"><span>Cars, utes</span></span>
+      <span class="line"><span>and tractors,</span></span>
+      <span class="line"><span class="hl">sorted in Dargaville.</span></span>
+    </h1>
+    <div class="hero-bottom hero-fade">
+      <div>
+        <p class="lead">Servicing and repairs for cars, utes and tractors, plus bullbars, winches, auto electrical and 4WD accessories. On Normanby Street, Monday to Friday.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="tel:+6494395150"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>Call 09 439 5150</a>
+          <a class="btn btn-ghost" href="#contact">Book it in</a>
+        </div>
+      </div>
+      <div class="rating">
+        <span class="num">4.7</span>
+        <div><span class="stars" aria-hidden="true">★★★★★</span><small>from 25 Google reviews</small></div>
+      </div>
+    </div>
+    <div class="slide-ctrl hero-fade">
+      <div class="slide-dots" id="slideDots" aria-hidden="true"><span class="on"></span><span></span><span></span></div>
+      <button class="pause" id="pauseBtn" type="button" aria-label="Pause the photo slideshow" aria-pressed="false">
+        <svg id="pauseIcon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- 3. TRUST STRIP -->
+<section class="trust" aria-label="Why locals use us">
+  <div class="wrap trust-grid">
+    <div class="trust-item"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><div><strong>Right in town</strong><span>16 Normanby Street, Dargaville.</span></div></div>
+    <div class="trust-item"><svg class="icon" aria-hidden="true"><use href="#i-wrench"/></svg><div><strong>Cars to tractors</strong><span>Road vehicles and farm gear under one roof.</span></div></div>
+    <div class="trust-item"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg><div><strong>Open weekdays</strong><span>Monday to Friday, 8am to 5pm.</span></div></div>
+  </div>
+</section>
+
+<!-- 4. SERVICES -->
+<section id="services" class="band-dark">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="eyebrow reveal">What we do</span><h2 class="reveal">Servicing, repairs and 4WD gear</h2></div>
+      <p class="muted reveal">From a routine service to kitting out your ute for the back blocks. Not sure if we do it? Give us a ring.</p>
+    </div>
+    <div class="tiles">
+      <article class="tile wide wipe"><img src="img/svc-servicing-1920.webp" srcset="img/svc-servicing-1080.webp 1080w, img/svc-servicing-1920.webp 1920w" sizes="(max-width:600px) 100vw, 66vw" alt="Mechanic working under the bonnet of a vehicle" width="1920" height="1080" loading="lazy"><div class="tile-body"><h3>Servicing and repairs</h3><p>Regular servicing and repair work on cars and utes to keep them reliable and on the road.</p></div></article>
+      <article class="tile wipe"><img src="img/svc-tractor-1920.webp" srcset="img/svc-tractor-1080.webp 1080w, img/svc-tractor-1920.webp 1920w" sizes="(max-width:600px) 100vw, 33vw" alt="Green tractor parked in a farm shed" width="1920" height="1442" loading="lazy"><div class="tile-body"><h3>Tractors</h3><p>Servicing and repairs on tractors, so the farm keeps moving.</p></div></article>
+      <article class="tile wipe"><img src="img/svc-ute-1920.webp" srcset="img/svc-ute-1080.webp 1080w, img/svc-ute-1920.webp 1920w" sizes="(max-width:600px) 100vw, 33vw" alt="Silver ute parked on a dirt track" width="1920" height="1280" loading="lazy"><div class="tile-body"><h3>Utes and 4WDs</h3><p>Work utes and weekend 4WDs looked after, from servicing to fault-finding.</p></div></article>
+      <article class="tile wipe"><img src="img/svc-bullbar-1920.webp" srcset="img/svc-bullbar-1080.webp 1080w, img/svc-bullbar-1920.webp 1920w" sizes="(max-width:600px) 100vw, 33vw" alt="4WD with a bullbar and roof rack on a muddy track" width="1920" height="1280" loading="lazy"><div class="tile-body"><h3>Bullbars and winches</h3><p>Bullbars, winches and 4WD accessories, supplied and fitted.</p></div></article>
+      <article class="tile wipe"><img src="img/svc-electrical-1920.webp" srcset="img/svc-electrical-1080.webp 1080w, img/svc-electrical-1920.webp 1920w" sizes="(max-width:600px) 100vw, 33vw" alt="Jumper leads clamped to a vehicle battery" width="1920" height="1280" loading="lazy"><div class="tile-body"><h3>Auto electrical</h3><p>Batteries, wiring and electrical faults tracked down and sorted.</p></div></article>
+      <article class="tile wide wipe"><img src="img/svc-diagnostics-1920.webp" srcset="img/svc-diagnostics-1080.webp 1080w, img/svc-diagnostics-1920.webp 1920w" sizes="(max-width:600px) 100vw, 66vw" alt="Hands working on an engine with a spanner" width="1920" height="1440" loading="lazy"><div class="tile-body"><h3>Diagnostics and breakdowns</h3><p>Warning light on, or something not right? Bring it in and we will find out what is going on.</p></div></article>
+    </div>
+    <p class="stock-note reveal">Service photos are stock images used for this demo. The workshop photo is Area 51's own.</p>
+  </div>
+</section>
+
+<!-- 5. ABOUT -->
+<section id="about" class="band-light">
+  <div class="wrap about-grid">
+    <div class="about-img wipe-up">
+      <img src="img/about-shopfront-1920.webp" srcset="img/about-shopfront-1080.webp 1080w, img/about-shopfront-1920.webp 1920w" sizes="(max-width:860px) 100vw, 55vw" alt="Area 51 Automotive shopfront with the green and black sign" width="1920" height="1440" loading="lazy">
+      <div class="corner-tag">16 Normanby St</div>
+    </div>
+    <div>
+      <span class="eyebrow reveal">About Area 51</span>
+      <h2 class="reveal">A Dargaville workshop for the vehicles locals actually drive</h2>
+      <p class="reveal">Area 51 Automotive looks after cars, utes and tractors from our workshop on Normanby Street. Whether it is a service, a repair or getting your 4WD set up with a bullbar and winch, you deal with the people doing the work.</p>
+      <p class="reveal">Locals rate us 4.7 out of 5 on Google, and we are proud of that. Give us a call and we will tell you straight what your vehicle needs.</p>
+      <ul class="checklist reveal">
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Local Dargaville workshop</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Cars, utes and tractors in one place</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Bullbars, winches and 4WD gear fitted</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAND (all real figures) -->
+<section class="parallax" aria-label="By the numbers">
+  <div class="bg" id="parallaxBg"></div>
+  <div class="wrap">
+    <div class="stats">
+      <div class="stat reveal"><div class="n" data-count="4.7" data-dec="1">4.7</div><p>Google rating</p></div>
+      <div class="stat reveal"><div class="n"><span data-count="25">25</span></div><p>Google reviews</p></div>
+      <div class="stat reveal"><div class="n"><span data-count="1.8" data-dec="1">1.8</span><em>K</em></div><p>Facebook followers</p></div>
+    </div>
+    <p class="note">Figures from Area 51's Google and Facebook pages, September 2026.</p>
+  </div>
+</section>
+
+<!-- 6. TEAM -->
+<section id="team" class="band-light">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="eyebrow reveal">The crew</span><h2 class="reveal">Who you will deal with</h2></div>
+      <p class="muted reveal">Sam runs the workshop. The other roles below are examples for this demo.</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-card reveal"><div class="avatar">S</div><h3>Sam</h3><p>Owner. Your first call for bookings, quotes and anything about your vehicle.</p></div>
+      <div class="team-card reveal"><div class="avatar">M</div><h3>Mechanic <span class="badge">Example</span></h3><p>Servicing and repairs on cars, utes and tractors.</p></div>
+      <div class="team-card reveal"><div class="avatar">AE</div><h3>Auto electrical <span class="badge">Example</span></h3><p>Batteries, wiring and fitting winches and accessories.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. REVIEWS (real Google reviews) -->
+<section id="reviews" class="band-dark">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="eyebrow reveal">Google reviews</span><h2 class="reveal">What locals say</h2></div>
+      <p class="muted reveal">Rated 4.7 out of 5 from 25 reviews on Google.</p>
+    </div>
+    <div class="reviews-grid">
+      <article class="review reveal"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Big shout out to the staff down here at Area 51. You guys are bloody legends. Highly recommend. Great pricing and awesome service."</p><footer><strong>Sarah Brady</strong>Google review <span class="snap">· 11 months ago</span></footer></article>
+      <article class="review reveal"><div class="stars" aria-label="5 stars">★★★★★</div><p>"Great service at very short notice! Needed an emergency radiator replacement while we were on holiday in the area and they got one in overnight and fitted it into their schedule the next day..."</p><footer><strong>Paul Jenkin</strong>Google review, excerpt <span class="snap">· 7 months ago</span></footer></article>
+      <article class="review reveal"><div class="stars" aria-label="4 stars">★★★★☆</div><p>"Helpful service. ... The person who assisted me here was very informative about Car Diagnostic Checks and literally seen me on the spot!"</p><footer><strong>Charntal Fataaiki</strong>Google review, excerpt <span class="snap">· 4 years ago</span></footer></article>
+    </div>
+    <p class="stock-note">Reviews as shown on Google, September 2026. Excerpts are marked with "...".</p>
+    <div class="center reveal"><a class="btn btn-ghost" href="https://www.google.com/maps?cid=16621189953758625324" target="_blank" rel="noopener">See all our Google reviews <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+  </div>
+</section>
+
+<!-- 8. LEAVE A REVIEW -->
+<section class="review-banner" aria-label="Leave a review">
+  <div class="wrap">
+    <div><h2>Happy with the job? Leave us a review</h2><p>It helps other Dargaville locals find a workshop they can trust.</p></div>
+    <a class="btn" href="https://www.google.com/maps?cid=16621189953758625324" target="_blank" rel="noopener">Review us on Google</a>
+  </div>
+</section>
+
+<!-- 9. FAQ -->
+<section id="faq" class="band-light">
+  <div class="wrap faq-grid">
+    <div><span class="eyebrow reveal">FAQ</span><h2 class="reveal">Before you call</h2><p class="muted reveal">Anything else, ring us on 09 439 5150.</p></div>
+    <div class="faq-list reveal">
+      <details open><summary>What vehicles do you work on?</summary><p>Cars, utes and tractors. If you are not sure whether we can help with your vehicle, give us a call and ask.</p></details>
+      <details><summary>Do you fit bullbars and winches?</summary><p>Yes. We do bullbars, winches and 4WD accessories. Call us with your make and model and we can talk you through the options.</p></details>
+      <details><summary>Do you do auto electrical work?</summary><p>Yes, including batteries and electrical faults. Tell us what is happening when you call and we will get it booked in.</p></details>
+      <details><summary>How do I book my vehicle in?</summary><p>Call us on 09 439 5150 or email us using the button below, and we will find a time that works.</p></details>
+      <details><summary>When are you open?</summary><p>Monday to Friday, 8am to 5pm. We are closed on weekends.</p></details>
+      <details><summary>Where are you?</summary><p>16 Normanby Street, Dargaville. There is a map at the bottom of this page.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- 10. CONTACT -->
+<section id="contact" class="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <span class="eyebrow reveal">Contact</span>
+      <h2 class="reveal">Need it looked at?</h2>
+      <p class="muted reveal">Call to book it in, or send us an email about your vehicle.</p>
+      <ul class="contact-rows reveal">
+        <li><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><a href="tel:+6494395150">09 439 5150</a></li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg><span id="emailText">Email us</span></li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><span>16 Normanby Street, Dargaville 0310</span></li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg><dl class="hours"><dt>Mon to Fri</dt><dd>8am to 5pm</dd><dt>Sat and Sun</dt><dd>Closed</dd></dl></li>
+      </ul>
+      <div class="socials reveal">
+        <a href="https://www.facebook.com/p/Area-51-automotive-LTD-100054296360580/" target="_blank" rel="noopener" aria-label="Area 51 Automotive on Facebook"><svg aria-hidden="true"><use href="#i-fb"/></svg></a>
+        <a href="https://www.instagram.com/explore/search/keyword/?q=Area%2051%20Automotive%20Dargaville" target="_blank" rel="noopener" aria-label="Search Instagram for Area 51 Automotive"><svg aria-hidden="true"><use href="#i-ig"/></svg></a>
+        <a href="https://www.tiktok.com/search?q=Area%2051%20Automotive%20Dargaville" target="_blank" rel="noopener" aria-label="Search TikTok for Area 51 Automotive"><svg aria-hidden="true"><use href="#i-tt"/></svg></a>
+      </div>
+    </div>
+    <div class="contact-actions reveal">
+      <a class="btn btn-primary" href="tel:+6494395150">Call to book it in <svg aria-hidden="true"><use href="#i-phone"/></svg></a>
+      <a class="btn btn-ghost" href="#" data-gmail data-user="area51" data-domain="outlook.co.nz" data-su="Vehicle%20enquiry" data-body="Hi%20Area%2051%2C%0A%0AVehicle%20(make%2C%20model%2C%20year)%3A%0AWhat%20needs%20doing%3A%0A%0AThanks">Email us about your vehicle <svg aria-hidden="true"><use href="#i-mail"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- 11. MAP -->
+<section class="map" aria-label="Map">
+  <iframe title="Map to Area 51 Automotive, 16 Normanby Street, Dargaville" src="https://www.google.com/maps?q=Area+51+Automotive+16+Normanby+Street+Dargaville&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+</main>
+
+<!-- 12. FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Area 51 Automotive Ltd · Dargaville</span>
+    <div class="footer-links">
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="https://www.google.com/maps?cid=16621189953758625324" target="_blank" rel="noopener">Leave a review</a>
+    </div>
+    <div class="socials">
+      <a href="https://www.facebook.com/p/Area-51-automotive-LTD-100054296360580/" target="_blank" rel="noopener" aria-label="Area 51 Automotive on Facebook"><svg aria-hidden="true"><use href="#i-fb"/></svg></a>
+      <a href="https://www.instagram.com/explore/search/keyword/?q=Area%2051%20Automotive%20Dargaville" target="_blank" rel="noopener" aria-label="Search Instagram for Area 51 Automotive"><svg aria-hidden="true"><use href="#i-ig"/></svg></a>
+      <a href="https://www.tiktok.com/search?q=Area%2051%20Automotive%20Dargaville" target="_blank" rel="noopener" aria-label="Search TikTok for Area 51 Automotive"><svg aria-hidden="true"><use href="#i-tt"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<script>
+var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+// Mobile menu
+var burger=document.getElementById('burger'),links=document.getElementById('navLinks');
+burger.addEventListener('click',function(){var o=links.classList.toggle('open');burger.setAttribute('aria-expanded',o);});
+links.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){links.classList.remove('open');burger.setAttribute('aria-expanded','false');});});
+
+// Nav shrinks on scroll + parallax band
+var nav=document.getElementById('nav'),pbg=document.getElementById('parallaxBg'),ticking=false;
+function onScroll(){
+  nav.classList.toggle('scrolled',window.scrollY>40);
+  if(!reduce&&pbg){var r=pbg.parentElement.getBoundingClientRect();if(r.bottom>0&&r.top<innerHeight){pbg.style.transform='translate3d(0,'+((r.top-innerHeight/2)*-0.18)+'px,0)';}}
+  ticking=false;
+}
+window.addEventListener('scroll',function(){if(!ticking){requestAnimationFrame(onScroll);ticking=true;}},{passive:true});
+onScroll();
+
+// Hero crossfade with an accessible pause/play control
+var slides=document.querySelectorAll('#heroSlides img'),dots=document.querySelectorAll('#slideDots span'),cur=0,timer=null;
+var pauseBtn=document.getElementById('pauseBtn'),pauseIcon=document.getElementById('pauseIcon');
+function next(){
+  slides[cur].classList.remove('active');dots[cur].classList.remove('on');
+  cur=(cur+1)%slides.length;
+  void slides[cur].offsetWidth;
+  slides[cur].classList.add('active');dots[cur].classList.add('on');
+}
+function play(){timer=setInterval(next,6000);pauseBtn.setAttribute('aria-pressed','false');pauseBtn.setAttribute('aria-label','Pause the photo slideshow');pauseIcon.innerHTML='<path d="M7 5h4v14H7zM13 5h4v14h-4z"/>';}
+function stop(){clearInterval(timer);timer=null;pauseBtn.setAttribute('aria-pressed','true');pauseBtn.setAttribute('aria-label','Play the photo slideshow');pauseIcon.innerHTML='<path d="M7 4l13 8-13 8z"/>';}
+if(slides.length>1){
+  if(reduce){stop();}else{play();}
+  pauseBtn.addEventListener('click',function(){timer?stop():play();});
+}else{pauseBtn.hidden=true;}
+
+// Count-up (supports decimals)
+function countUp(el){
+  var end=+el.getAttribute('data-count'),dec=+(el.getAttribute('data-dec')||0);
+  if(reduce){el.textContent=end.toFixed(dec);return;}
+  var t0=null;
+  function step(t){if(!t0)t0=t;var p=Math.min((t-t0)/1600,1);el.textContent=(end*(1-Math.pow(1-p,3))).toFixed(dec);if(p<1)requestAnimationFrame(step);}
+  requestAnimationFrame(step);
+}
+
+// Scroll reveals: staggered within each parent
+var targets=document.querySelectorAll('.reveal,.wipe,.wipe-up');
+if('IntersectionObserver' in window&&!reduce){
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(!e.isIntersecting)return;
+      var el=e.target,sibs=Array.prototype.filter.call(el.parentElement.children,function(c){return c.matches('.reveal,.wipe,.wipe-up');});
+      var d=(Math.max(0,sibs.indexOf(el))*0.1)+'s',img=el.querySelector(':scope>img');
+      if(img){img.style.transitionDelay=d+',0s';img.addEventListener('transitionend',function(){img.style.transitionDelay='';},{once:true});}
+      else{el.style.transitionDelay=d;}
+      el.classList.add('in');
+      el.querySelectorAll('[data-count]').forEach(countUp);
+      io.unobserve(el);
+    });
+  },{threshold:.15,rootMargin:'0px 0px -40px 0px'});
+  targets.forEach(function(el){io.observe(el);});
+}else{
+  targets.forEach(function(el){el.classList.add('in');});
+}
+
+// Gmail compose links (email built in JS so Cloudflare can't rewrite it)
+document.querySelectorAll('a[data-gmail]').forEach(function(a){var to=a.getAttribute('data-user')+'@'+a.getAttribute('data-domain');a.href='https://mail.google.com/mail/?view=cm&fs=1&to='+encodeURIComponent(to)+'&su='+(a.getAttribute('data-su')||'')+'&body='+(a.getAttribute('data-body')||'');a.target='_blank';a.rel='noopener';});
+var et=document.getElementById('emailText');if(et)et.textContent='area51'+'@'+'outlook.co.nz';
+
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
